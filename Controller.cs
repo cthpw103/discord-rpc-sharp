@@ -15,8 +15,8 @@ public class Controller : MonoBehaviour
     public RichPresence presence;
     public string applicationId;
     public string optionalSteamId;
-    public UnityEngine.Events.UnityEvent onConnect;
-    public UnityEngine.Events.UnityEvent onDisconnect;
+    public event EventHandler<EventArgs> onConnect;
+    public event EventHandler<EventArgs> onDisconnect;
     public DiscordJoinEvent onJoin;
     public DiscordJoinEvent onSpectate;
     public DiscordJoinRequestEvent onJoinRequest;
